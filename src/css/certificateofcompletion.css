@@ -1,0 +1,102 @@
+.container-wrapper{
+    background-color: #EBEDF4;
+    height: 100vh;
+}
+
+.certificate-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+  }
+  
+  .certificate {
+    background-color: #f2f2f2;
+    padding: 5%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 0px rgba(126, 126, 126, 0.5);
+
+  }
+
+  .document-overview {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: left;
+    max-width: 500px;
+    border-radius: 10px;
+    position: relative; /* Added */
+    box-shadow: 5px 5px 10px 0px rgba(126, 126, 126, 0.5);
+
+  }
+  
+  .document-overview h2 {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+  .document-overview p {
+    margin-bottom: 20px;
+    color: #3d3d3d;
+  }
+  
+  .document-overview button {
+    background-color: #e7e7e7;
+    border: none;
+    color: #333;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  /* .document-overview button:first-child {
+    background-color: #4caf50;
+    color: white;
+    width: 100%;
+  } */
+  
+  .document-overview button:nth-child(3) {
+    width: 100%;
+    background-color: #a1ef53;
+  }
+  
+  .certificate-info {
+    margin-top: 20px;
+    padding: 10px;
+    /* background-color: #fff;
+    border: 1px solid #ddd; */
+  }
+  
+  .certificate-info h3 {
+    margin-top: 0;
+  }
+  
+  .certificate-info p {
+    margin-bottom: 5px;
+  }
+  
+  .download-icon {
+    position: absolute; 
+    left: 50%; 
+    font-size: 20px; 
+    cursor: pointer; 
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* background-color: #f2f2f2; */
+    /* border-bottom: 1px solid #ddd; */
+  }
+  
+  .logo {
+    max-height: 40px;
+    margin-left: 50px;
+  }

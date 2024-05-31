@@ -1,0 +1,811 @@
+.dashboard-wrapper {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #0c2340;
+  padding: 10px 0;
+  padding-right: 10px;
+}
+
+.sidebar {
+  background-color: #0c2340;
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  margin-top: 5px;
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.company-name {
+  font-size: 30px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.create-btn {
+  background-color: #8000ff;
+  color: white;
+  border: none;
+  padding: 10px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.home {
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 30px;
+  background-color: #ebedf4;
+  color: black;
+  border-radius: 20px 0 0 20px;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #ebedf4;
+  border-radius: 10px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  column-gap: 20px;
+}
+
+.search-container {
+  flex: 3;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  color: #777;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: 20px;
+}
+
+.search-bar input {
+  padding: 10px 40px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 0px rgba(126, 126, 126, 0.5);
+  width: 100%;
+  outline: none;
+}
+
+/* Rest of the CSS remains the same */
+
+.user-info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.metamask-logo-container {
+  background-color: #8000ff;
+  padding: 5px 15px;
+  border-radius: 4px;
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.metamask-logo {
+  width: 27px;
+  height: 27px;
+}
+
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.profile-image {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+}
+
+.profile-table-image-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.profile-table-image {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+}
+
+.logout-icon-container {
+  background-color: white; /* Match MetaMask box color */
+  padding: 10px; /* Adjust padding as needed */
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center; /* Center the icon horizontally */
+  align-items: center; /* Center the icon vertically */
+}
+
+/* .documents-table {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  } */
+
+.table-header1 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  color: #7a7878;
+  /* background-color: #f0f0f0; */
+  padding: 10px;
+  font-weight: bold;
+}
+
+.table-row1 {
+  display: grid !important;
+  grid-template-columns: repeat(5, 1fr) !important;
+  padding: 10px !important;
+  border-bottom: 1px solid #e4e4e4 !important;
+}
+
+.dashboard-wrapper {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #0c2340;
+  padding: 10px 0;
+  padding-right: 10px;
+}
+
+.sidebar {
+  background-color: #0c2340;
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  margin-top: 5px;
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.company-name {
+  font-size: 30px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.create-btn {
+  background-color: #8000ff;
+  color: white;
+  border: none;
+  padding: 10px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.home {
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 30px;
+  background-color: #ebedf4;
+  color: black;
+  border-radius: 20px 0 0 20px;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #ebedf4;
+  border-radius: 10px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  column-gap: 20px;
+}
+
+.search-container {
+  flex: 3;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  color: #777;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: 20px;
+}
+
+.search-bar input {
+  padding: 10px 40px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 0px rgba(126, 126, 126, 0.5);
+  width: 100%;
+  outline: none;
+}
+
+/* Rest of the CSS remains the same */
+
+.user-info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.metamask-logo-container {
+  background-color: #8000ff;
+  padding: 5px 15px;
+  border-radius: 4px;
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.metamask-logo {
+  width: 27px;
+  height: 27px;
+}
+
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.profile-image {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+}
+
+.profile-table-image-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.profile-table-image {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+}
+
+.logout-icon-container {
+  background-color: white; /* Match MetaMask box color */
+  padding: 10px; /* Adjust padding as needed */
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center; /* Center the icon horizontally */
+  align-items: center; /* Center the icon vertically */
+}
+
+/* .documents-table {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  } */
+
+.table-header1 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  color: #7a7878;
+  /* background-color: #f0f0f0; */
+  padding: 10px;
+  font-weight: bold;
+}
+
+.table-row1 {
+  display: grid !important;
+  grid-template-columns: repeat(5, 1fr) !important;
+  padding: 10px !important;
+  border-bottom: 1px solid #e4e4e4 !important;
+}
+
+.status {
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  width: fit-content;
+}
+
+.pad-status {
+  padding: 0 !important;
+}
+
+/* .valid {
+  padding: 5px 10px;
+  background-color: #def7c4;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.pending {
+  padding: 5px 10px;
+  background-color: #f7c4c4;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+} */
+
+.status.pending {
+  background-color: #eaad7b;
+  border-radius: 15px; /* Light orange */
+  color: #000;
+}
+
+.status.approved {
+  background-color: #def7c4;
+  border-radius: 15px; /* Light green */
+  color: #000;
+}
+
+.status.rejected {
+  background-color: #f7c4c4;
+  border-radius: 15px; /* Light red */
+  color: #000;
+}
+
+.action-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  width: auto;
+}
+
+.action-icons .icon {
+  font-size: 16px;
+}
+
+.action-icons :nth-child(2) {
+  margin-left: 30px;
+}
+
+.documents-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 87%;
+}
+
+.card {
+  background-color: #fff; /* Optional: Set background color */
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+/* Previous CSS */
+
+.create-btn-container {
+  position: relative;
+  z-index: 1;
+}
+
+.create-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 300px;
+}
+
+.create-dropdown-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.file-icon {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #000000;
+}
+
+.certificate-text {
+  font-weight: bold;
+  color: #000000;
+  font-size: 16px;
+}
+
+.create-dropdown-description {
+  text-align: left;
+  font-size: 12px;
+  color: #777;
+  margin-left: 40px;
+}
+
+.profile-image-container {
+  position: relative;
+}
+
+.user-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+.user-dropdown-content {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.settings-icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+/* delete modal css */
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  margin-bottom: 20px;
+}
+
+.modal-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.modal-message {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.modal-button.verify {
+  background-color: #def7c4;
+}
+.modal-button.not-valid {
+  background-color: #f7c4c4;
+}
+
+.modal-button.cancel {
+  background-color: #ccc;
+  color: #333;
+}
+/* end of css */
+
+.pad-status {
+  padding: 0 !important;
+}
+
+.valid {
+  padding: 5px 10px;
+  background-color: #def7c4;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.pending {
+  padding: 5px 10px;
+  background-color: #f7c4c4;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.action-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  width: auto;
+}
+
+.action-icons .icon {
+  font-size: 16px;
+}
+
+.action-icons :nth-child(2) {
+  margin-left: 30px;
+}
+
+.documents-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 87%;
+}
+
+.card {
+  background-color: #fff; /* Optional: Set background color */
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+/* Previous CSS */
+
+.create-btn-container {
+  position: relative;
+  z-index: 1;
+}
+
+.create-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 300px;
+}
+
+.create-dropdown-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.file-icon {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #000000;
+}
+
+.certificate-text {
+  font-weight: bold;
+  color: #000000;
+  font-size: 16px;
+}
+
+.create-dropdown-description {
+  text-align: left;
+  font-size: 12px;
+  color: #777;
+  margin-left: 40px;
+}
+
+.profile-image-container {
+  position: relative;
+}
+
+.user-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+.user-dropdown-content {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.settings-icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+/* delete modal css */
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  margin-bottom: 20px;
+}
+
+.modal-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.modal-message {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.modal-button.verify {
+  background-color: #def7c4;
+}
+.modal-button.not-valid {
+  background-color: #f7c4c4;
+}
+
+.modal-button.cancel {
+  background-color: #ccc;
+  color: #333;
+}
+/* end of css */

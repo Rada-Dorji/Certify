@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font family */
+@font-face {
+    font-family: "ng";
+    src: url();
+}
+.form-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  input[type="radio"] {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 2%;
+    border: 2px solid #333;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Style the custom radio button */
+.radio-btn {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Style the inner circle (dot) */
+.radio-btn::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Show the inner circle when radio button is checked */
+input[type="radio"]:checked + .radio-btn::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+/* button navbar  */
+.loginBut {
+    @apply bg-white border-none px-8 py-3 inline-block font-semibold text-sm uppercase cursor-pointer;
+    transform: skew(-21deg);
+    background-color: rgb(245, 245, 245);
+
+  }
+  
+  .loginBut span {
+    @apply inline-block;
+    transform: skew(21deg);
+  }
+  
+  .loginBut::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: rgb(20, 20, 20);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  
+  .loginBut:hover {
+    @apply text-white;
+  }
+  
+  .loginBut:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
